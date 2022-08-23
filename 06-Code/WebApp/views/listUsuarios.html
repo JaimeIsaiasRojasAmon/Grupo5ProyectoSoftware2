@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="/CANGRECODERS-GROUP-1/06-Code/views/css/style.css">
+    <script src="/CANGRECODERS-GROUP-1/06-Code/01WebAPP/WebApp/views/js/registroDatos.js"></script>
+    <title>Usuarios Registrados</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo-sistema" style="height:auto; width:150px !important;" src="https://inmejia.edu.ec/wp-content/uploads/2022/03/Escudo-de-armas-del-Instituto-Nacional-Mejia-2022-125-anos-245x300.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/CANGRECODERS-GROUP-1/06-Code/views/insertDocente.html">Registrar Docentes</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/CANGRECODERS-GROUP-1/06-Code/views/insertAlumno.html">Registrar Alumnos</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/CANGRECODERS-GROUP-1/06-Code/views/insertMateria.html">Registrar Materias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://localhost/CANGRECODERS-GROUP-1/06-Code/views/listUsuarios.html">Listar Usuarios</a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+          </nav>
+          <div class="col-md-12" >
+            <div class="row" style="padding-left: 15rem;padding-right: 15rem;">
+              <div id="tabla_usuarios" style="
+              margin-left: 25%;"></div>
+            </div>
+          </div>
+          <script>
+            window.onload = function() {
+          listarUsuarios();
+          };
+          </script>
+        </body>
+        </html>

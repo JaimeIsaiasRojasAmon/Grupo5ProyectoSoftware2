@@ -1,0 +1,1 @@
+export const ApiUrl = "http://34.125.165.209:3003/educationsystem/";

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+   
+    <link rel="stylesheet" href="/CANGRECODERS-GROUP-1/06-Code/views/css/style.css">
+    <script src="/CANGRECODERS-GROUP-1/06-Code/views/js/registroDatos.js"></script>
+    <title>INGRESO DE DOCENTES AL SISTEMA</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo-sistema" style="height:auto; width:150px !important;" src="https://inmejia.edu.ec/wp-content/uploads/2022/03/Escudo-de-armas-del-Instituto-Nacional-Mejia-2022-125-anos-245x300.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/CANGRECODERS-GROUP-1/06-Code/views/insertDocente.html">Registrar Docentes</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/CANGRECODERS-GROUP-1/06-Code/views/insertAlumno.html">Registrar Alumnos</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="http://localhost/CANGRECODERS-GROUP-1/06-Code/views/insertMateria.html">Registrar Materias</a>
+                  </li>
+                  </ul>
+              </div>
+          </div>
+          </nav>
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-7 col-lg-8 col-md-9 col-11 text-center">
+                <h3>REGISTRO DE DOCENTES</h3>
+                <p class="blue-text">Complete todos los campos para que el docente sea registrado</p>
+                <div class="card">
+                    
+                    <form class="form-card" onsubmit="event.preventDefault()">
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombres del docente<span class="text-danger"> *</span></label> <input type="text" id="txtNombre" name="txtNombre" placeholder="Nombres del docente" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Apellidos del docente<span class="text-danger"> *</span></label> <input type="text" id="txtApellido" name="txtApellido" placeholder="Apellidos del docente" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nivel de estudio<span class="text-danger"> *</span></label> <input type="text" id="txtNivel" name="txtNivel" placeholder="Ej: Masterado" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Teléfono celular<span class="text-danger"> *</span></label> <input type="text" id="txtTelefono" name="txtTelefono" placeholder="Ej: 0983525003" > </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Dirección<span class="text-danger"> *</span></label> <input type="text" id="txtDireccion" name="txtDireccion" placeholder="Ej: Cotopaxi, Barrio Guamaní" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Correo electrónico<span class="text-danger"> *</span></label> <input type="text" id="txtCorreo" name="txtCorreo" placeholder="ej: juanluis@gmail.com" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Paralelo<span class="text-danger"> *</span></label> <input type="text" id="txtParalelos" name="txtParalelos" placeholder="ej. A-B-C-D" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Cédula Docente<span class="text-danger"> *</span></label> <input type="text" id="txtDocente" name="txtNivel" placeholder="ej: 1711990836" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre de la Materia que imparte<span class="text-danger"> *</span></label> <input type="text" id="txtMaterias" name="txtMaterias" placeholder="Materias a impartirs" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Año Lectivo<span class="text-danger"> *</span></label> <input type="text" id="yearLectivo" name="yearLectivo" placeholder="ej:2021-2022" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Número de materias que imparte<span class="text-danger"> *</span></label> <input type="text" id="numMateria" name="numMateria" placeholder="Ej: 2" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Salario por materia ($)<span class="text-danger"> *</span></label> <input type="text" id="numSalario" name="numSalario" placeholder="ej: 520" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Nombre de usuario<span class="text-danger"> *</span></label> <input type="text" id="txtUsuario" name="txtUsuario" placeholder="Inicial del nombre y apellido, Ej: jcarrera" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Contraseña<span class="text-danger"> *</span></label> <input type="text" id="txtPassword" name="txtPassword" placeholder="Número de cédula, EJ: 1600894628" > </div>
+                        </div>
+                        <div class="row justify-content-between text-left">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Tipo de usuario<span class="text-danger"> *</span></label> <input type="text" id="txtTipo" name="txtTipo" placeholder="Ej: docente, alumno" > </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Status<span class="text-danger"> *</span></label> <input type="text" id="txtStatus" name="txtStatus" placeholder="Ej: activo, inactivo" > </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="form-group col-sm-6"> <button onclick="registroDocente()" type="submit" class="btn-block btn-primary">Registrar Docente</button> </div>
+                        </div>       
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Registrado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            El docente ha sido registrada exitosamente!!!
+        </div>
+        <div class="modal-footer">
+      
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
